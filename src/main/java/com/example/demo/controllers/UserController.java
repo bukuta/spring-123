@@ -6,6 +6,7 @@ import java.util.List;
 import com.example.demo.dao.User;
 import com.example.demo.responses.Pagable;
 
+import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.PathVariable;
 // import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -38,6 +39,9 @@ public class UserController {
             rs.items.add(u);
         }
         return rs;
+    }
+    public Page<User> ooo(){
+        return null;
     }
 
     @RequestMapping("/{userId}")
