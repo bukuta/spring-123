@@ -1,0 +1,1 @@
+INSERT INTO `admins` (`id`,`name`) values(1,"name1");

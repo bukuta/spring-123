@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@SpringBootApplication(scanBasePackages = {"com.example.demo.*"})
+@SpringBootApplication(scanBasePackages = {"com.example.demo","com.example.demo.*"})
 public class DemoApplication {
 
     @RequestMapping("/hello")
